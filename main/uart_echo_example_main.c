@@ -41,7 +41,7 @@ void uart_init(void) {
 //uart 发送线程
 static void tx_task(void *arg)
 {
-    static uint8_t data[]={0x01,0x02,0x03,0x04,0x05};
+    static uint8_t data[]={0x01,0x02,0x03,0x04,0x05,0x06};
     while (1) {
         //往UART_NUM_1发送"Hello world"
         //uart_write_bytes(UART_NUM_1, "Hello world", strlen("Hello world"));
